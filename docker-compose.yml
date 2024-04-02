@@ -14,7 +14,7 @@ services:
       - ./db:/docker-entrypoint-initdb.d
 
       
-mariadbs_exporter:
+  mariadbs_exporter:
     image: quay.io/prometheus/mysqld-exporter
     ports:
       - 9104:9104
